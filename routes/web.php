@@ -7,6 +7,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return View::make('pages.home');
+});
+
+Route::get('/about', function () {
+    return View::make('pages.about');
+});
+
 Route::get('/hello', function () {
     return 'Bonjour le monde!';
     });
