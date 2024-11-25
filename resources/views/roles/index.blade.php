@@ -17,6 +17,8 @@
                                 <div class="col-sm">
                                     <a href="{{ route('roles.edit', $role->id) }}"
                                         class="btn btn-primary btn-sm">Edit</a>
+                                    <a href="{{ route('roles.show', $role->id) }}"
+                                        class="btn btn-primary btn-sm">Show</a>    
                                 </div>
                                 <div class="col-sm">
                                     <form action="{{ route('roles.destroy', $role->id) }}" method="post">
@@ -32,8 +34,6 @@
             @endforeach
         </div>
     </div>
-     <h2>Accueil du site</h2>
-     <p>Bienvenue sur la page d'accueil du site</p>
 @stop
 
 @section('pied_page')

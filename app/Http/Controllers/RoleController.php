@@ -37,7 +37,9 @@ class RoleController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $role = Role::find($id);
+
+        return view('roles.show', compact('role'));
     }
 
     /**
@@ -45,7 +47,9 @@ class RoleController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $role = Role::find($id);
+
+        return view('roles.edit', compact('role'));
     }
 
     /**
