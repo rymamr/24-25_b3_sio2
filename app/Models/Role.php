@@ -8,6 +8,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
 
 /**
  * Class Role
@@ -21,7 +23,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Role extends Model
 {
-	protected $table = 'PFX_roles';
+	use HasFactory, Notifiable;
+
+	#protected $table = 'PFX_roles';
 	public $timestamps = false;
 
 	protected $fillable = [
