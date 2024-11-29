@@ -18,7 +18,7 @@
                                     <a href="{{ route('roles.edit', $role->id) }}"
                                         class="btn btn-primary btn-sm">Edit</a>
                                     <a href="{{ route('roles.show', $role->id) }}"
-                                        class="btn btn-primary btn-sm">Show</a>    
+                                        class="btn btn-primary btn-sm">Show</a>   
                                 </div>
                                 <div class="col-sm">
                                     <form action="{{ route('roles.destroy', $role->id) }}" method="post">
